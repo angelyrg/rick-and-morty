@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Character from "../components/Character";
+import CharacterCard from "../components/CharacterCard";
 import MenuBar from "../components/MenuBar";
 
 export const CharactersListPage = () => {
@@ -43,12 +43,13 @@ export const CharactersListPage = () => {
             <Row>
               {characters.map((character) => (
                 <Col key={character.id} xs={12} md={6} lg={4} className="mb-2">
-                  <Character
+                  <CharacterCard
                     id={character.id}
                     name={character.name}
                     status={character.status}
                     species={character.species}
                     gender={character.gender}
+                    image_url={character.image}
                   />
                 </Col>
               ))}

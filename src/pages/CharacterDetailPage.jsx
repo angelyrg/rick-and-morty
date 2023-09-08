@@ -44,8 +44,8 @@ function CharacterDetailPage() {
           <p>Loading...</p>
         ) : (
           <Row>
-            <Col>
-              <Card className="p-0" style={{ width: "18rem" }}>
+            <Col sm="6">
+              <Card className="p-0" >
                 <Card.Img variant="top" src={character.image} />
                 <Card.Body>
                   <Card.Title>{character.name}</Card.Title>
@@ -59,14 +59,19 @@ function CharacterDetailPage() {
                       <Badge bg="secondary">{character.status}</Badge>
                     )}
                   </p>
-                  <p>
-                    Origin:{" "}
-                    <Link to="/">{character.origin.name}</Link>
+
+                  <p className="mb-0">
+                  Species: {character.species}
                   </p>
-                </Card.Body>
-                <Card.Body>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
+
+                  {character.type !== "" ? (
+                    <p className="mb-0">Type: {character.type}</p>
+                  ) : ''}
+                  
+                  <p className="mb-0">
+                    Origin: {character.origin.name}
+                  </p>
+                  
                 </Card.Body>
               </Card>
             </Col>
