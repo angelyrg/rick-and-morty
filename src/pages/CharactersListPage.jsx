@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CharacterCard from "../components/CharacterCard";
-import MenuBar from "../components/MenuBar";
+import MenuNavbar from "../components/MenuNavbar";
 
 export const CharactersListPage = () => {
   const api_characters = "https://rickandmortyapi.com/api/character";
@@ -29,7 +29,7 @@ export const CharactersListPage = () => {
 
   return (
     <>
-      <MenuBar />
+      <MenuNavbar />
       <Container>
         <Row>
           <Col>

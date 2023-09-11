@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 
-function MenuBar() {
+function MenuNavbar() {
   return (
     <Navbar expand="md" className="bg-body-tertiary">
         <Container>
@@ -20,4 +20,4 @@ function MenuBar() {
   )
 }
 
-export default MenuBar
+export default MenuNavbar

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import MenuBar from "../components/MenuBar";
-import Episode from "../components/Episode";
+import MenuNavbar from "../components/MenuNavbar";
+import EpisodeCard from "../components/EpisodeCard";
 
 export const EpisodesListPage = () => {
   const api_episodes = "https://rickandmortyapi.com/api/episode";
@@ -29,7 +29,7 @@ export const EpisodesListPage = () => {
 
   return (
     <>
-      <MenuBar />
+      <MenuNavbar />
       <Container>
         <Row>
           <Col>
@@ -43,7 +43,7 @@ export const EpisodesListPage = () => {
             <Row>
               {episodes.map((episode) => (
                 <Col key={episode.id} xs={12} md={6} lg={4} className="mb-2">
-                  <Episode
+                  <EpisodeCard
                     name={episode.name}
                     episode={episode.episode}
                     air_date={episode.air_date}

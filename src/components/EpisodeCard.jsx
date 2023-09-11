@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-function Episode({ name, episode, air_date, totalCharacters }) {
+function EpisodeCard({ name, episode, air_date, totalCharacters }) {
   return (
     <Card>
       <Card.Body>
@@ -16,4 +16,4 @@ function Episode({ name, episode, air_date, totalCharacters }) {
   );
 }
 
-export default Episode;
+export default EpisodeCard;

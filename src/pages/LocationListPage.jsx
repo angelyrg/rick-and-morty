@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import MenuBar from "../components/MenuBar";
-import Location from "../components/Location";
+import MenuNavbar from "../components/MenuNavbar";
+import Location from "../components/LocationCard";
 
 export const LocationListPage = () => {
   const api_locations = "https://rickandmortyapi.com/api/location";
@@ -29,7 +29,7 @@ export const LocationListPage = () => {
 
   return (
     <>
-      <MenuBar />
+      <MenuNavbar />
       <Container>
         <Row>
           <Col>

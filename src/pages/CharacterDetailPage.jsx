@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Badge, Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
-import MenuBar from "../components/MenuBar";
+import MenuNavbar from "../components/MenuNavbar";
 
 function CharacterDetailPage() {
   const { characterId } = useParams();
@@ -31,7 +31,7 @@ function CharacterDetailPage() {
 
   return (
     <>
-      <MenuBar />
+      <MenuNavbar />
       <Container>
         <Row className="mb-2">
           <Link to={`/character`}>

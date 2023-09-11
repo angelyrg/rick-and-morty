@@ -1,12 +1,12 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
-import MenuBar from "../components/MenuBar";
+import MenuNavbar from "../components/MenuNavbar";
 import { Link } from "react-router-dom";
 
 
 export const HomePage = () => {
   return (
     <>
-      <MenuBar />
+      <MenuNavbar />
       <Container>
         <Row className="mt-3" >
           <Col xs={12} md={6} lg={4} className="mb-2">
