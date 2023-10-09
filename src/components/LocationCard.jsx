@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 function LocationCard({ name, type, dimension, totalResidents }) {
   return (
-    <Card>
+    <Card className="shadow-sm rounded-3">
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>

@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 function MenuNavbar() {
   return (
-    <Navbar expand="md" className="bg-body-tertiary">
+    <Navbar expand="md" >
         <Container>
           <Navbar.Brand href="/">R&M</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

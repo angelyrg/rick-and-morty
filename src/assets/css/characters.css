@@ -1,0 +1,119 @@
+.filter-option{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.filter-option > input{
+    display: none;
+}
+
+.filter-option > span{
+    border: 1px solid rgb(168, 168, 168);
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.status > input:checked + span{
+    background-color: #24ca93;
+    color: white;
+}
+
+.gender > input:checked + span{
+    background-color: #247fca;
+    color: white;
+}
+
+#inputSearch:focus{
+    box-shadow: none;
+}
+
+.accordion{
+    position: relative;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #ebebeb !important;
+}
+
+.accordion-collapse{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid rgb(202, 202, 202) !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+
+/* Estilos para el interruptor -----------------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 26px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+
+input:checked+.slider {
+    background-color: #88e23b;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+
+/* Agrega estilos para tu tema oscuro y claro aquí */
+/* body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-theme body {
+    background-color: #333;
+    color: #fff;
+} */
+/* END\ Estilos para el interruptor -----------------*/
