@@ -9,9 +9,12 @@ export default function CharacterDetailModal({ character, show, handleModalClose
         <Modal.Header>
           <Modal.Title>{character.name}</Modal.Title>
         </Modal.Header>
-        {/* <Image variant="top" src={"character.image"} /> */}
         <Modal.Body>
-          <p className="mb-0">
+          <div className="text-center">
+            <Image variant="top" src={character.image} />
+          </div>
+
+          <p className="mt-3 mb-0">
             Status:{" "}
             {character.status === "Alive" ? (
               <Badge bg="success">{character.status}</Badge>

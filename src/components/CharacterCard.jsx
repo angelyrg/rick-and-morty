@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function CharacterCard({ character, setSingleCharacter, setDebeEjecutarEfecto}) {
   return (
     <Card className="shadow-sm rounded-3" style={{ 'flexDirection': 'row' }}>
-      {/* <Card.Img src={image_url} className="img-fluid rounded-end-0" style={{ width: '30%', objectFit:'cover' }} /> */}
+      <Card.Img src={character.image} className="img-fluid rounded-end-0" style={{ width: '30%', objectFit:'cover' }} />
       <Card.Body>
         <Card.Title>
           <Link onClick={()=>{setSingleCharacter(character); setDebeEjecutarEfecto(true)}} style={{ textDecoration: "none" }}>
